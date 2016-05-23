@@ -19,12 +19,12 @@
     <div id="logo"><a href="index.html"><img src="logo (w developers).png" width="150" height="67" alt=""/></a></div>
   <div id="navigation">
       <ul>
-        <li><a href="generic.html">Road Fatalities</a>
+        <li><a href="phil.html">Road Fatalities</a>
         </li>
-        <li><a href="generic.html">License Statistics</a>  
+        <li><a href="luke.html">License Statistics</a>  
         </li>
-        <li><a href="generic.html">Kilometers Driven</a></li>
-        <li><a href="generic.html">Car Brands Australia</a></li>
+        <li><a href="ben.html">Kilometers Driven</a></li>
+        <li><a href="adrian.html">Car Brands Australia</a></li>
           </ul>
         <script type="text/javascript">
 $(function() {
@@ -49,7 +49,7 @@ $(function() {
 
   <div class="cmain">
   
-  <h2> Road Safety </h2>
+  <h2> License Statistics </h2>
   <p>The annual economic cost of road crashes in Australia is enormous—estimated at $27 billion per annum—and the social impacts are devastating. We develop solutions and campaigns to keep drivers, cyclists, pedestrians and motorcyclists informed of the best and latest road safety measures. Choosing safer vehicles could help save your life in you are in a crash.</p><br><br>
   <img src="DataVisMap.jpg.jpg" width="765" height="430" alt=""/>
 <p><br><br>
