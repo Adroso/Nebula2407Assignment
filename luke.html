@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+        text-align: center;
+        background-color: #eee;
+    }
+    
+    h2{
+        text-align: center;
+    }
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Licence Data</title>
+    <script src="RGraph/libraries/RGraph.pie.js"></script>
+    <script src="RGraph/libraries/RGraph.common.core.js"></script>
+    <script src="RGraph/libraries/RGraph.common.key.js"></script>
+    <script src="RGraph/libraries/RGraph.common.dynamic.js"></script>
+    <script src="RGraph/libraries/RGraph.common.tooltips.js"></script>
+    <script src="RGraph/libraries/RGraph.common.effects.js"></script>
+    <script src="RGraph/libraries/RGraph.drawing.rect.js"></script>
+    <script src="RGraph/libraries/RGraph.line.js"></script>
+</head>
+<body>
+    <h1></h1>
+    <p>
+    </p>
+        <canvas id="cvs1" width="750" height="500" style="body">
+            <script src="program.js"></script>
+        </canvas>
+    <div>
+    Occurence: <input type="text" id="y" /></div>
+    <br>
+    <br>
+        <button id="LicenceButton" onclick="Licence()">Licence Types</button>
+        <button id="GendersButton" onclick="Genders()">Driver Genders</button>
+    <br>
+    <br>
+    <p>Paragraph about stuff</p>
+</body>
+</html>
