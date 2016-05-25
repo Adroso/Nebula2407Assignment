@@ -2,12 +2,10 @@
 var outputCanvas = document.getElementById('cvs1');
 
 //This data was found under "Licence Holders" in the "Licence Types" table
-//https://www.sa.gov.au/topics/transport-travel-and-motoring/transport-facts-and-figures/registration-and-licensing
 var LicenceHeldPercent = ['91.04%','2.59%','1.70%','0.36%','4.30%'] 
 var LicenceHeld = [1110760,31656,20785,4438,52507] //Total = 1220146
 
 //This data came from the excel sheet linked under "Licence Types" information
-//https://www.sa.gov.au/topics/transport-travel-and-motoring/transport-facts-and-figures/registration-and-licensing
 var dataMale = [577824,581353,584451,578808,595958,610663]
 var dataFemale = [536139,539593,543959,543107,558190,572527]
 
@@ -18,14 +16,13 @@ var tooltipsGender = ['577824','581353','584451','578808','595958','610663','536
 
 window.onload = Licence()
 
-
 function Licence() {
         RGraph.ObjectRegistry.clear('cvs1');        
         var pie = new RGraph.Pie({
             id: 'cvs1',
             data: LicenceHeld,
             options: {
-                colors: ['#00f','red','#0a3','#aaa', '#ff0'],
+                colors: ['#00f','red','#0a3','#aaa','#ff0'],
                 strokestyle: 'white',
                 linewidth: 1,
                 shadowBlur: 10,
@@ -36,11 +33,12 @@ function Licence() {
                 textAccessible: true,
                 title: 'Licenced Drivers On Our Roads',
                 titleY: 30,
+                titleSize: 20,
                 labels: [1110760,31656,,,52507],
                 labelsSticks: [true,true,,,true],
                 labelsSticksLength: 25,
                 key: ['Full','Provisional 1','Provisional 2','Probationary','Learner'],
-                keyColors: ['#00f','red','#0a3','#aaa', '#ff0'],
+                keyColors: ['#00f','red','#0a3','#aaa','#ff0'],
                 keyInteractive: true,
                 keyRounded: false,
                 keyPosition: 'gutter',
@@ -91,6 +89,7 @@ function Genders() {
                 backgroundGridVlines: false,
                 hmargin: 2,
                 tickmarks: 'filledcircle',
+                gutterTop: 50,
                 gutterLeft: 100,
                 gutterBottom: 50,
                 colors: ['#3af','#e56'],
@@ -103,6 +102,7 @@ function Genders() {
                 linewidth: 5,
                 hmargin: 15,
                 title: 'Gender Comparison Of Licence Holders',
+                titleSize: 20,
                 titleYaxis: 'Number of Licence Holders',
                 titleXaxis: 'Year',
                 titleYaxisPos: 0.3,
