@@ -6,8 +6,21 @@
         background-color: #eee;
     }
     
-    h2{
+    h1{
         text-align: center;
+        font-size: 18px;
+        margin-left: 50px;
+    }
+    
+    h2{
+        text-align: left;
+        font-size: 24px;
+        margin-left: 50px;
+    }
+    
+    p{
+        text-align: left;
+        margin-left: 50px;
     }
 
 </style>
@@ -24,20 +37,29 @@
     <script src="RGraph/libraries/RGraph.line.js"></script>
 </head>
 <body>
-    <h1></h1>
-    <p>
-    </p>
         <canvas id="cvs1" width="750" height="500" style="body">
             <script src="program.js"></script>
         </canvas>
     <div>
-    Occurence: <input type="text" id="y" /></div>
+    Amount of Users: <input type="text" id="y" /></div>
     <br>
     <br>
         <button id="LicenceButton" onclick="Licence()">Licence Types</button>
         <button id="GendersButton" onclick="Genders()">Driver Genders</button>
     <br>
-    <br>
-    <p>Paragraph about stuff</p>
+    <h1>
+        This data was given by: <a href src="https://www.sa.gov.au/topics/transport-travel-and-motoring/transport-facts-and-figures/registration-and-licensing">www.sa.gov.au</a>
+    </h1>
+    <h2>Licence Types Data set:</h2>
+    <p>
+        The first data set represents the comparitive fractions of licence types of drivers on the road. This applies mainly to new road users or even people teaching others to become road users. Someone who has very little experience on the road would love to know the environment they are about to become apart of. The relevant sections that of the graph (P-Plates, L-Plates) were made clear with the use of colours closing matching those of the plate type.
+        <br>
+        The most obvious conclusion new drivers will make from this graph is that they will be starting off as a tiny percentage of the people using the roads. A less obivous piece of information that can be drawn from this graph is that very few (0.36%) are considered "bad" drivers. Showing that the roads can be considered safe, in that respect.
+    </p>
+    </p>
+    <h2>Driver Genders Data set:</h2>
+    <p>
+        The second data set displays the trends of the genders we see on our roads. ***target audience***. This data set is interesting to see the dips, peaks and plateaus in licence holders. It also shows that the gap between the genders on the road is slowly closing, even though they are still very similar now.
+    </p>
 </body>
 </html>
